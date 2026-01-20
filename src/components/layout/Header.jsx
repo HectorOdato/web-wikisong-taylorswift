@@ -3,18 +3,19 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header className="bg-pink-100">
-            <div className="max-w-7xl mx-auto flex justify-between items-center">
-                <div className="flex flex-col p-10">
-                <h1 className="text-3xl font-bold italic ">Taylor Wiki</h1>
-                <h2 className="text-xl text-gray-100">-----Song vault-----</h2>
+        <header className="relative overflow-hidden shadow-2xl p-5 mb-8">
+            <img src="https://res.cloudinary.com/deijzj2mb/image/upload/v1768883427/imagen_2026-01-20_013024052_flzobt.png" alt="" className='absolute top-0 left-0 w-full h-full object-cover -z-10 sepia opacity-30'/>
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-900/60 via-pink-800/50 to-rose-700/40 -z-5"></div>
+            <div className="max-w-6xl mx-auto flex justify-between items-center relative z-10 px-8">
+                <div className="flex flex-col py-12">
+                    <h1 className="text-6xl font-black italic text-white drop-shadow-lg tracking-wide">Taylor Wiki</h1>
+                    <h2 className="text-2xl text-pink-100 mt-2 font-light">✨ Song Vault ✨</h2>
                 </div>
                 <nav>
-                    <ul className="flex space-x-4 font-bold text-2xl gap-15">
-                    <li><Link to="/">Inicio</Link></li>
-                    <li><Link to="/songs">Canciones</Link></li>
-                    <li><Link to="/albums">Eras</Link></li>
-                    <li><Link to="/about">About</Link></li>
+                    <ul className="flex space-x-8 font-bold text-2xl">
+                        <li><Link to="/" className="text-white hover:text-pink-200 transition-colors duration-300">Inicio</Link></li>
+                        <li><Link to="/albums" className="text-white hover:text-pink-200 transition-colors duration-300">Eras</Link></li>
+                        <li><Link to="/about" className="text-white hover:text-pink-200 transition-colors duration-300">About</Link></li>
                     </ul>
                 </nav>
             </div>

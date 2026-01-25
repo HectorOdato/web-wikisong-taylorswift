@@ -2,6 +2,7 @@ import { taylorSwiftImg, fearlessImg, speakNowImg, redImg, img1989, reputationIm
 import { imgdebutbanner, imgfearlessbanner, imgspeaknowbanner, imgredbanner, img1989banner, imgreputationbanner, imgloverbanner, imgfolklorebanner, imgevermorebanner, imgmidnightsbanner, imgtorturedpoetsbanner, imglifeofashowgirlbanner } from "../assets/images/imgbanners.jsx";
 import { gradientClasses } from "../components/layout/PageBackground.jsx";
 import {descriptions}  from "./descriptionalbum.js"
+import {logosAlbums} from "../assets/images/logos.jsx";
 import ttpdsong from "../data/Songs/Ttpd.json";
 import song from "../data/Songs/1989.json";
 import debugsong from "../data/Songs/Debug.json";
@@ -15,6 +16,7 @@ const albums = [
     id: "taylor_swift",
     title: "Taylor Swift",
     año: 2006,
+    imglogo: logosAlbums.debut,
     img: taylorSwiftImg,
     banner: imgdebutbanner,
     background: gradientClasses.debut,
@@ -25,6 +27,7 @@ const albums = [
     id: "fearless",
     title: "Fearless",
     año: 2008,
+    imglogo: logosAlbums.fearless,
     banner: imgfearlessbanner,
     img: fearlessImg,
     background: gradientClasses.fearless,
@@ -35,6 +38,7 @@ const albums = [
     id: "speak_now",
     title: "Speak Now",
     año: 2010,
+    imglogo: logosAlbums.speaknow,
     banner: imgspeaknowbanner,
     img: speakNowImg,
     background: gradientClasses.speakNow,
@@ -45,6 +49,7 @@ const albums = [
     id: "red",
     title: "Red",
     año: 2012,
+    imglogo: logosAlbums.red,
     img: redImg,
     banner: imgredbanner,
     background: gradientClasses.red,
@@ -54,6 +59,7 @@ const albums = [
   {
     id: "1989",
     title: "1989",
+    imglogo: logosAlbums.img1989,
     año: 2014,
     img: img1989,
     banner: img1989banner,
@@ -65,6 +71,7 @@ const albums = [
     id: "reputation",
     title: "Reputation",
     año: 2017,
+    imglogo: logosAlbums.reputation,
     img: reputationImg,
     banner: imgreputationbanner,
     background: gradientClasses.reputation,
@@ -75,6 +82,7 @@ const albums = [
     id: "lover",
     title: "Lover",
     año: 2019,
+    imglogo: logosAlbums.lover,
     img: loverImg,
     banner: imgloverbanner,
     background: gradientClasses.lover,
@@ -85,6 +93,7 @@ const albums = [
     id: "folklore",
     title: "Folklore",
     año: 2020,
+    imglogo: logosAlbums.folklore,
     img: folkloreImg,
     banner: imgfolklorebanner,
     background: gradientClasses.folklore,
@@ -95,6 +104,7 @@ const albums = [
     id: "evermore",
     title: "Evermore",
     año: 2020,
+    imglogo: logosAlbums.evermore,
     img: evermoreImg,
     banner: imgevermorebanner,
     background: gradientClasses.evermore,
@@ -105,6 +115,7 @@ const albums = [
     id: "midnights",
     title: "Midnights",
     año: 2022,
+    imglogo: logosAlbums.midnights,
     img: midnightsImg,
     banner: imgmidnightsbanner,
     background: gradientClasses.midnights,
@@ -115,6 +126,7 @@ const albums = [
     id: "the_tortured_poets_department",
     title: "The Tortured Poets Department",
     año: 2024,
+    imglogo: logosAlbums.theTorturedPoetsDepartment,
     img: theTorturedPoetsDepartmentImg,
     banner: imgtorturedpoetsbanner,
     background: gradientClasses.theTorturedPoetsDepartment,
@@ -125,6 +137,7 @@ const albums = [
     id: "the_life_of_a_showgirl",
     title: "The Life of a Showgirl",
     año: 2025,
+    imglogo: logosAlbums.theLifeOfAShowgirl,
     img: theLifeOfAShowgirlImg,
     banner: imglifeofashowgirlbanner,
     background: gradientClasses.lifeOfAShowgirl,

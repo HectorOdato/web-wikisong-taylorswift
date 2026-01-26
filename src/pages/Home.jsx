@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/layout/Header';
 import AlbumCard from '../components/ui/AlbumCard.jsx';
 import albums from '../data/albums.js';
+import { AboutMe } from '../components/ui/AboutMe.jsx';
 
 function Home() {
     return (
@@ -15,8 +16,11 @@ function Home() {
                         album={album}
                     />
                 ))}
-                
             </div>
+            <div className='mt-20'>
+                <AboutMe />
+            </div>
+            
         </div>
     );
 }

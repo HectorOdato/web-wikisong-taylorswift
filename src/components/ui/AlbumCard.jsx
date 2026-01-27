@@ -4,13 +4,22 @@ import { Link } from "react-router-dom";
 const AlbumCard = ({ album }) => {
   return (
     <Link to={`/album/${album.id}`}>
-      <div className="shadow-md overflow-hidden hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer">
-        <img 
-          src={album.img} 
-          alt={album.title} 
-          className="w-full h-64 object-cover" 
+          <div className="w-75 h-75 perspective group relative z-10">
+      <div className="relative w-full h-full duration-700 transform-style-3d group-hover:rotate-y-180">
+        {/* Cara frontal */}
+        <img
+          src={album.img}
+          alt={album.title}
+          className="absolute w-full h-full object-cover backface-hidden"
+        />
+        {/* Cara trasera */}
+        <img
+          src={album.imglogo}
+          alt={album.title}
+          className="absolute w-full h-full object-cover backface-hidden rotate-y-180 sepia opacity-50"
         />
       </div>
+    </div>
     </Link>
   );
 };

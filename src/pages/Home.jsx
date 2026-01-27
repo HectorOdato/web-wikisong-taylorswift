@@ -26,7 +26,6 @@ function Home() {
             <div className='mt-20 relative z-10'>
                 <AboutMe />
             </div>
-            
         </div>
     );
 }

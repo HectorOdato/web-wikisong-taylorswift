@@ -1,0 +1,20 @@
+import React from 'react';
+
+
+const SectionDivider = ({ title }) => {
+  return (
+    <div className="flex items-center w-full my-16 relative z-10">
+      <div className="flex-grow h-px bg-white"></div>
+
+      {title && (
+        <h2 className="mx-6 text-white text-2xl md:text-5xl font-semibold tracking-wide">
+          {title}
+        </h2>
+      )}
+
+      <div className="flex-grow h-px bg-white"></div>
+    </div>
+  );
+};
+
+export default SectionDivider;

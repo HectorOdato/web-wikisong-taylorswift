@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/layout/Header';
 import AlbumCard from '../components/ui/AlbumCard.jsx';
-import albums from '../data/albums.js';
+import albums from '../data/AlbumsData.js';
 import { AboutMe } from '../components/ui/AboutMe.jsx';
 import SectionDivider from '../components/ui/SectionDivider.jsx';
 

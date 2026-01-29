@@ -3,13 +3,13 @@ import { imgdebutbanner, imgfearlessbanner, imgspeaknowbanner, imgredbanner, img
 import { gradientClasses } from "../components/layout/PageBackground.jsx";
 import {descriptions}  from "./descriptionalbum.js"
 import {logosAlbums} from "../assets/images/logos.jsx";
-import ttpdsong from "../data/Songs/Ttpd.json";
-import song from "../data/Songs/1989.json";
-import debugsong from "../data/Songs/Debug.json";
-import fearlesssong from "../data/Songs/Fearless.json";
-import folkloresong from "../data/Songs/Folklore.json";
-import loversong from "../data/Songs/Lover.json";
-import repsong from "../data/Songs/REP.json";
+import ttpdsong from "./Songs/Ttpd.json";
+import song from "./Songs/1989.json";
+import debugsong from "./Songs/Debug.json";
+import fearlesssong from "./Songs/Fearless.json";
+import folkloresong from "./Songs/Folklore.json";
+import loversong from "./Songs/Lover.json";
+import repsong from "./Songs/REP.json";
 
 const albums = [
   {

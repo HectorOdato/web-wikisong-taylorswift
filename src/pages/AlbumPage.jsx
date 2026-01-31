@@ -24,7 +24,7 @@ function AlbumPage() {
   <div className={`absolute inset-0 ${album.background} bg-cover bg-center`} />
   <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
   <main className="relative z-10 max-w-8xl mx-auto px-6 py-10 space-y-12">    
-    <section className="bg-white/5 border border-white/10 rounded-2xl p-15 mt-10 shadow-lg max-w-7xl mx-auto">
+    <section className="bg-white/5 border border-white/10 rounded-2xl p-10 mt-10 shadow-lg max-w-7xl mx-auto">
       <DescriptionsCard
         description={album.descripcion}
         src={album.imglogo}

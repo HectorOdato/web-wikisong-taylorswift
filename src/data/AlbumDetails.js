@@ -1,5 +1,5 @@
 
-const detailsalbum = {
+const AlbumDetailsContent = {
     "taylor_swift": {
         imagen: "https://res.cloudinary.com/deijzj2mb/image/upload/v1769304380/Taylor_Swift_Album_Portada_eal5kt.webp",
         parrafolinea1: "Al principio, la adolescente nativa de Pensilvania conocida como Taylor Swift era una estrella de la música country de pies a cabeza. Su álbum debut homónimo , que incluía éxitos inminentes como la melancólica «Teardrops On My Guitar» y «Tim McGraw», se vio impulsado por el acento de Nashville que adoraba de pequeña y que adoptó para integrarse. Como era de esperar, se puso las botas vaqueras a juego.",

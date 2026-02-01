@@ -54,6 +54,7 @@ const Header = () => {
                 <nav>
                     <ul className="flex space-x-20 font-bold text-2xl">
                         <li><Link to="/" className="text-white hover:text-orange-300 transition-colors duration-300">Inicio</Link></li>
+                        <li><Link to="/biography" className="text-white hover:text-orange-300 transition-colors duration-300">Biografía</Link></li>
                         <li><DropdownMenu>{albums.map((album) => (
                         <Link
                             key={album.id}
@@ -62,7 +63,6 @@ const Header = () => {
                             {album.title}
                         </Link>
                     ))}</DropdownMenu></li>
-                        <li><Link to="/about" className="text-white hover:text-orange-300 transition-colors duration-300">About</Link></li>
                     </ul>
                 </nav>
             </div>

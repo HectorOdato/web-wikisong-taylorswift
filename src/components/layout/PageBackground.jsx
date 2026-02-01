@@ -26,3 +26,8 @@ export const gradientClasses = {
   lifeOfAShowgirl: "bg-orange-700/90"
 };
 
+export const PageBackground =  { 
+
+  font_black: "bg-stone-950"
+}
+

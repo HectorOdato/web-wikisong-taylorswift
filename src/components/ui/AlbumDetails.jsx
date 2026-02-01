@@ -14,7 +14,7 @@ const ContentDivider = ({ texto }) => {
   );
 };
 
-function Details({ parrafolinea1, parrafolinea2, parrafolinea3, citatextual, parrafofinal, imagen,momentosclave }) {
+function AlbumDetails({ parrafolinea1, parrafolinea2, parrafolinea3, citatextual, parrafofinal, imagen,momentosclave }) {
   return (
     <section className="max-w-7xl mx-auto mt-16 mb-10 px-6 relative z-10">
       <div className="  p-8 text-gray-200 leading-relaxed text-lg ">
@@ -48,4 +48,4 @@ function Details({ parrafolinea1, parrafolinea2, parrafolinea3, citatextual, par
   );
 }
 
-export default Details;
+export default AlbumDetails;

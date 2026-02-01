@@ -4,15 +4,15 @@ import SongCard from "../components/ui/SongCard.jsx";
 import albums from "../data/AlbumsData.js";
 import DescriptionsCard from "../components/ui/DescriptionCard.jsx";
 import SectionDivider from "../components/ui/SectionDivider.jsx";
-import Details from "../components/ui/AlbumDetails.jsx";
-import detailsalbum from "../data/AlbumDetails.js";
+import AlbumDetails from "../components/ui/AlbumDetails.jsx";
+import AlbumDetailsContent  from "../data/AlbumDetails.js";
 import {Carousel} from "../components/ui/carousel/Carousel.jsx";
 import imagesCarousel from "../components/ui/carousel/carouselImages.js";
 
 function AlbumPage() {
   const { id } = useParams();
   const album = albums.find((album) => album.id === id);
-  const detailsinfo = detailsalbum[id];
+  const detailsinfo = AlbumDetailsContent[id];
   const albumCarousel = imagesCarousel.find((item) => item.id === id);
 
 
@@ -35,7 +35,7 @@ function AlbumPage() {
     </section>
     <section className="space-y-6">
       <SectionDivider title="Datos Relevantes"/>
-          <Details {...detailsinfo} />
+          <AlbumDetails {...detailsinfo} />
     </section>
     <section className="flex justify-center">
       <img

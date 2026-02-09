@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 
-const SongCard = ({ song, index }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const SongCard = ({ song, index, isOpen = false, onToggle = () => {} }) => {
   return (
     <div className="mb-3 border border-black rounded-lg overflow-hidden hover:shadow-md transition-shadow">
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => onToggle(index)}
         className="w-full px-4 py-3 bg-gray-200/20 hover:bg-gray-50 flex items-center justify-between"
       >
         <div className="text-left flex items-center gap-3">

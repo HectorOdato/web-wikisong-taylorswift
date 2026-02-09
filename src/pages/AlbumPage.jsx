@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import SongCard from "../components/ui/SongCard.jsx";
 import albums from "../data/AlbumsData.js";
@@ -19,6 +19,14 @@ function AlbumPage() {
   if (!album) {
     return <div>Álbum no encontrado</div>;
   }
+
+    /*Para ver que cancion esta selecionada*/
+  const [openIndex, setOpenIndex] = useState(null);
+  
+  const handleToggle = (idx) => {
+    setOpenIndex((prev) => (prev === idx ? null : idx));
+  };
+
   return (
   <div className="min-h-screen relative bg-black text-white">
   <div className={`absolute inset-0 ${album.background} bg-cover bg-center`} />
@@ -54,7 +62,13 @@ function AlbumPage() {
       <SectionDivider title="Canciones" />
       <div className="bg-white/5 border border-white/10 rounded-2xl p-6 space-y-4">
         {album.songs.map((song, index) => (
-          <SongCard key={song.id || index} song={song} index={index} />
+          <SongCard
+            key={song.id || index}
+            song={song}
+            index={index}
+            isOpen={openIndex === index}
+            onToggle={handleToggle}
+          />
         ))}
       </div>
     </section>

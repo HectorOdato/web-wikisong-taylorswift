@@ -16,7 +16,7 @@ const ContentDivider = ({ texto }) => {
 
 function AlbumDetails({ parrafolinea1, parrafolinea2, parrafolinea3, citatextual, parrafofinal, imagen,momentosclave }) {
   return (
-    <section className="max-w-7xl mx-auto mt-10 mb-10 px-6 relative z-10">
+    <div className="max-w-7xl mx-auto mt-10 mb-10 px-6 relative z-10">
       <div className="  p-8 text-black leading-relaxed text-lg ">
         <img
           src={imagen}
@@ -31,7 +31,7 @@ function AlbumDetails({ parrafolinea1, parrafolinea2, parrafolinea3, citatextual
         <p className="mt-4">{parrafolinea3}</p>
 
         <p className="mt-4">{parrafofinal}</p>
-        <p className="mt-4 italic font-bold text-pink-300">
+        <p className="mt-4 italic text-pink-600 font-bold">
           {citatextual}
         </p>
         <ul>
@@ -44,7 +44,7 @@ function AlbumDetails({ parrafolinea1, parrafolinea2, parrafolinea3, citatextual
         </ul>
         <div className="clear-both"></div>
       </div>
-    </section>
+    </div>
   );
 }
 

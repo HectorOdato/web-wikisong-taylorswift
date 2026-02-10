@@ -28,6 +28,8 @@ export const gradientClasses = {
 
 export const PageBackground =  { 
 
-  font_black: "bg-stone-950"
+  font_black: "bg-stone-950",
+
+  font_white: "bg-white"
 }
 

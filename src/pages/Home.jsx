@@ -9,8 +9,14 @@ function Home() {
     return (
         <div className={`min-h-screen relative ${PageBackground.font_black}`}>
             <div className="absolute top-0 left-0 w-full h-full bg-white"></div>
-            <div className="flex justify-center mx-auto pt-10 pb-10">
-                <img src="https://res.cloudinary.com/deijzj2mb/image/upload/v1769483226/pinot_noir_ezdwef.png" alt="welcome" className='relative z-10 w-350 h-150 rounded-xl' />
+            <div className="relative mx-auto h-full pt-1 pb-10">
+                <img src="https://res.cloudinary.com/deijzj2mb/image/upload/v1769836854/wp13390081-taylor-swift-the-eras-tour-desktop-hd-wallpapers_ekat4s.jpg" 
+                    alt="welcome" 
+                    className=' w-full h-full object-cover' />
+            <div className='absolute inset-0 flex flex-col items-center justify-center px-6 lg:px-20 max-w-3xl'>
+                <h2 className='text-white text-2xl lg:text-6xl font-bold'>Bievenido/a</h2>
+                <p className='text-white text-base lg:text-3xl font-bold text-center'>Un viaje por la musica,las emociones y las eras de taylor swift</p>
+            </div>
             </div>
             <SectionDivider title="Eras" />
             <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 max-w-7xl mx-auto">
@@ -22,7 +28,7 @@ function Home() {
                 ))}
             </div>
             <SectionDivider title="Sobre Mí" />
-            <div className='pb-15 mt-20'>
+            <div>
                 <AboutMe />
             </div>
         </div>

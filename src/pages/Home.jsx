@@ -28,7 +28,7 @@ function Home() {
                 ))}
             </div>
             <SectionDivider title="Sobre Mí" />
-            <div>
+            <div className='pb-15 mt-20'>
                 <AboutMe />
             </div>
         </div>

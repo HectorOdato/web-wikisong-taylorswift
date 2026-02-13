@@ -28,7 +28,7 @@ function DropdownMenu({children}) {
         <div className="relative" ref={dropdownRef}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-white hover:text-orange-300 transition-colors duration-300"
+                className="text-white hover:text-orange-300 transition-all duration-300 hover:scale-110"
             >
                 Eras
             </button>

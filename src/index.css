@@ -1,13 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --animate-zoom-imagen: zoom-imagen 1.2s ease-in-out both;
-  --animate-fade-slide-down: fade-slide-down 0.8s ease-out both;
-  --animate-fade-slide-up: fade-slide-up 0.8s ease-out both;
-  --animate-fade-in: fade-in 0.6s ease-out both;
+  --animate-zoom-image: zoom-image 1.2s ease-in-out both;
+
+  --animate-fade-vertical-down: fade-vertical-down 0.8s ease-out both;
+  --animate-fade-vertical-up: fade-vertical-up 0.8s ease-out both;
+
+  --animate-fade-horizontal-right: fade-horizontal-right 1s ease-out both;
+  --animate-fade-horizontal-left: fade-horizontal-left 1s ease-out both;
 }
 
-@keyframes zoom-imagen {
+
+@keyframes zoom-image {
   0% {
     transform: scale(1.1);
     opacity: 0;
@@ -18,7 +22,7 @@
   }
 }
 
-@keyframes fade-slide-down {
+@keyframes fade-vertical-down {
   0% {
     opacity: 0;
     transform: translateY(-30px);
@@ -29,7 +33,7 @@
   }
 }
 
-@keyframes fade-slide-up {
+@keyframes fade-vertical-up {
   0% {
     opacity: 0;
     transform: translateY(30px);
@@ -40,14 +44,25 @@
   }
 }
 
-@keyframes fade-in {
+@keyframes fade-horizontal-left {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(-30px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-horizontal-right {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 

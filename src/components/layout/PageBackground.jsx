@@ -1,30 +1,31 @@
 import React from "react";
 
+/*Personalizacion de fondo por color  de album (No ultilizable) */
 export const gradientClasses = {
-  debut: "bg-green-300/30",
+  debut: "bg-white",
 
   fearless: "bg-white",
 
-  speakNow: "bg-purple-400",
+  speakNow: "bg-white",
 
   red: "bg-white",
 
-  nineteenEightyNine: "bg-sky-200",
+  nineteenEightyNine: "bg-white",
 
-  reputation: "bg-neutral-600",
+  reputation: "bg-white",
 
-  lover: "bg-pink-200",
+  lover: "bg-white",
 
-  folklore: "bg-neutral-100",
+  folklore: "bg-white",
 
-  evermore: "bg-yellow-700/60",
+  evermore: "bg-white",
 
   midnights: "bg-white",
 
-  theTorturedPoetsDepartment: "bg-neutral-200",
+  theTorturedPoetsDepartment: "bg-white",
 
   lifeOfAShowgirl: "bg-white"
-};
+}; 
 
 export const PageBackground =  { 
 

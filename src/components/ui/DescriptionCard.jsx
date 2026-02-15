@@ -14,10 +14,10 @@ const DescriptionsCard = ({ src,alt, description, title, año }) => {
     
     {/* Contenido de texto */}
     <div className="flex flex-col w-full md:w-2/3 lg:w-auto lg:flex-1 p-4 md:p-5 lg:p-6">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 md:mb-4 text-black text-center md:text-left">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 md:mb-4 text-black text-center md:text-left poppins-medium ">
             {title} ({año})
         </h1>
-        <p className="text-black text-base md:text-base lg:text-lg xl:text-xl leading-relaxed text-left md:text-left">
+        <p className="text-black text-base md:text-base lg:text-lg xl:text-xl leading-relaxed text-left md:text-left poppins-light">
             {description}
         </p>
     </div>

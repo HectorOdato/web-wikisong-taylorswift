@@ -12,11 +12,11 @@ export const ContentSection = ({ imagen, parrafo1, parrafo2, parrafo3, parrafo4,
       className={`${classFloatImage} w-full md:w-80 lg:w-96 h-auto object-cover rounded-lg lg:rounded-full shadow-xl mb-6 md:mb-0 md:ml-6 lg:ml-8 lg:mt-15`}
     />
     
-    <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-6 md:mb-8 text-pink-400 text-center leading-relaxed">
+    <h2 className="text-2xl md:text-3xl lg:text-5xl mb-6 md:mb-8 text-pink-400 text-center leading-relaxed playfair-display-title">
       {titulo}
     </h2>
-    
-    <p className="mb-4 text-justify md:text-left">
+    <div className="poppins-light">
+    <p className="mb-4 text-justify md:text-left  ">
       {parrafo1}
     </p>
 
@@ -33,6 +33,7 @@ export const ContentSection = ({ imagen, parrafo1, parrafo2, parrafo3, parrafo4,
     </p>
     
     <div className="clear-both"></div>
+    </div>
   </div>
 </section>
 </RevealSection>

@@ -12,13 +12,13 @@ return (
             <img 
                 src="https://res.cloudinary.com/deijzj2mb/image/upload/v1769836854/wp13390081-taylor-swift-the-eras-tour-desktop-hd-wallpapers_ekat4s.jpg" 
                 alt="welcome" 
-                className='w-full h-80 lg:h-full md:h-full xl:h-full object-cover' 
+                className='w-full h-80 lg:h-full md:h-full object-cover' 
             />
-            <div className='absolute pl-5 max-w-3xl xl:max-w-4xl mx-auto gap-2 inset-0 flex flex-col  justify-center xl:right-200 xl:gap-8'>
-                <h2 className='text-white text-xl lg:text-6xl md:text-3xl xl:text-8xl font-bold animate-fade-horizontal-left delay-300'>
+            <div className='absolute pl-5 xl:max-w-4xl mx-auto gap-2 inset-0 flex flex-col justify-center xl:right-200 lg:gap-8 lg:bottom-50 text-shadow-2xs'>
+                <h2 className='text-white text-3xl lg:text-6xl md:text-3xl xl:text-8xl font-bold animate-fade-horizontal-left delay-300 playfair-display-title'>
                     Bienvenido/a
                 </h2>
-                <p className='text-white text-sm lg:text-3xl md:text-xl xl:text-5xl font-bold animate-fade-horizontal-left delay-600'>
+                <p className='text-white text-xl lg:text-3xl md:text-xl xl:text-5xl font-bold animate-fade-horizontal-left delay-600 poppins-regular'>
                     Un viaje por la música, las emociones y las eras de Taylor Swift
                 </p>
             </div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Oswald:wght@200..700&display=swap');
+
 @import "tailwindcss";
 
 @theme {
@@ -87,4 +89,42 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.playfair-display-title {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+.oswald-font {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }

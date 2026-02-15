@@ -46,7 +46,7 @@ const Header = () => {
     const [showAlbums, setShowAlbums] = useState(false);
 
     return (
-        <header className="sticky top-0 w-full h-auto z-20 shadow-2xl p-3 sm:p-5">
+        <header className="sticky top-0 w-full h-auto lg:h-60 z-20 shadow-2xl p-3 sm:p-5 oswald-font">
             <img 
                 src="https://res.cloudinary.com/deijzj2mb/image/upload/v1768883427/imagen_2026-01-20_013024052_flzobt.png" 
                 alt="" 
@@ -55,17 +55,17 @@ const Header = () => {
             <div className="max-w-7xl mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
                     <div className="flex flex-col py-4 sm:py-8 lg:py-12">
-                        <h1 className="text-2xl sm:text-4xl lg:text-6xl font-black italic text-white drop-shadow-lg tracking-wide">
+                        <h1 className="text-2xl sm:text-4xl lg:text-7xl font-black italic text-white drop-shadow-lg tracking-wide poppins-semibold">
                             Taylor Wiki
                         </h1>
-                        <h2 className="text-sm sm:text-lg lg:text-2xl text-orange-300 mt-1 sm:mt-2 font-light">
+                        <h2 className="text-sm sm:text-lg lg:text-3xl text-orange-300 mt-1 sm:mt-2 font-light">
                             ✨ Song Vault ✨
                         </h2>
                     </div>
 
                     {/* Navegación Desktop */}
                     <nav className="hidden md:block">
-                        <ul className="flex space-x-6 lg:space-x-12 xl:space-x-20 font-bold text-lg lg:text-xl xl:text-2xl bg-black/70 p-5 rounded-xl backdrop-blur-sm">
+                        <ul className="flex space-x-6 lg:space-x-12 xl:space-x-20 font-bold text-lg lg:text-xl xl:text-2xl bg-black/50 p-5 rounded-xl backdrop-blur-sm">
                             <li>
                                 <Link 
                                     to="/" 

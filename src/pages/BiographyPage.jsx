@@ -28,15 +28,17 @@ export const BiographyPage = () => {
         />
     </div>
         <div className="w-full lg:w-auto lg:ml-8 lg:p-10 flex flex-col lg:gap-3 lg:animate-fade-horizontal-left">
-        <h1 className="text-2xl lg:text-4xl xl:text-5xl font-bold mb-3 lg:mb-5 text-center lg:text-left">
+        <h1 className="text-2xl lg:text-3xl xl:text-5xl mb-3 lg:mb-5 text-center lg:text-left playfair-display-title">
             Taylor Swift, historia y biografía
         </h1>
-        <p className="text-sm lg:text-base text-center lg:text-left leading-relaxed">
+        <div className="text-sm lg:text-xl text-center lg:text-left leading-relaxed poppins-regular">
+        <p>
             Cantante que se convirtió en una de las artistas más influyentes del siglo XXI.
         </p>
-        <p className="text-sm lg:text-base text-center lg:text-left leading-relaxed">
+        <p >
             Sus inicios como compositora de música country y su llegada a la fama.
         </p>
+        </div>
     </div>
     </section>
             <ContentSection
@@ -64,7 +66,8 @@ export const BiographyPage = () => {
                 classFloatImage={floatimage.float_right}
                 />
                 <section className="flex flex-col items-center text-black leading-relaxed text-base md:text-lg lg:text-xl max-w-7xl mx-auto lg:mt-25 ">
-                    <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-6 md:mb-8 text-pink-400 text-center leading-relaxed">Como comenzo la carrera de Taylor Swift </h2>
+                    <h2 className="text-2xl md:text-3xl lg:text-5xl playfair-display-title mb-6 md:mb-8 text-pink-400 text-center leading-relaxed">Como comenzo la carrera de Taylor Swift </h2>
+                    <div className="poppins-light">
                     <p className="mb-5">Motivada por la artista Shania Twain, Taylor decidió dejar las clases de actuación para enfocarse en cantar en festivales y eventos musicales. A los 11 años viajó junto a su madre a Tennessee con el objetivo de presentar grabaciones donde interpretaba canciones de Dolly Parton y de las Dixie Chicks a distintas compañías discográficas, aunque en ese momento no obtuvo respuesta positiva.
                         Más adelante, Taylor aprendió a tocar la guitarra y comenzó a dar sus primeros pasos en la composición de letras. Durante esa etapa, tuvo la oportunidad de participar como modelo en un programa de talentos emergentes de la marca Abercrombie & Fitch. Además, con el apoyo del representante artístico Dan Dymtrow, consiguió que una canción original suya fuera utilizada en una campaña de la marca Maybelline.
                     </p>
@@ -94,6 +97,7 @@ export const BiographyPage = () => {
                     <p className="mb-5">
                         En paralelo, debido a la disputa por los derechos de sus primeros seis álbumes, Taylor decidió regrabar su catálogo. Así surgieron <strong>Fearless (Taylor’s Version)</strong> y <strong>Red (Taylor’s Version)</strong> en 2021, seguidos por <strong>Speak Now (Taylor’s Version)</strong> y <strong>1989 (Taylor’s Version)</strong> en años posteriores. Aún quedan regrabaciones pendientes de sus primeros trabajos.
                     </p >
+                    </div>
 </section>
         <section>
             <ContentSection

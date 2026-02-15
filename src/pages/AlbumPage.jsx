@@ -8,7 +8,7 @@ import AlbumDetails from "../components/ui/AlbumDetails.jsx";
 import AlbumDetailsContent  from "../data/AlbumDetails.js";
 import {Carousel} from "../components/ui/carousel/Carousel.jsx";
 import imagesCarousel from "../components/ui/carousel/carouselImages.js";
-
+ 
 function AlbumPage() {
   const { id } = useParams();
   const album = albums.find((album) => album.id === id);

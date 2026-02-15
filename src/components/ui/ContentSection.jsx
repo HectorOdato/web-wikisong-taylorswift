@@ -4,7 +4,7 @@ import RevealSection from "../layout/RevealSection";
 export const ContentSection = ({ imagen, parrafo1, parrafo2, parrafo3, parrafo4, classFloatImage, titulo }) => {
       return (
     <RevealSection>
-<section className="mt-8 md:mt-12 lg:mt-16  mb-6 md:mb-8 lg:mb-20 px-4 md:px-6 lg:px-8 xl:px-12 relative z-10">
+<section className="mt-8 md:mt-12 lg:mt-16  mb-6 md:mb-8 lg:mb-10 lg:pb-20 px-4 md:px-6 lg:px-8 xl:px-12 relative z-10">
   <div className="text-black leading-relaxed text-base md:text-lg lg:text-xl max-w-7xl mx-auto">
     <img
       src={imagen}

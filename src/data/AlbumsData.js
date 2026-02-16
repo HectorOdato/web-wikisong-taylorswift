@@ -3,18 +3,18 @@ import { taylorBanners } from "../assets/images/imgbanners.jsx";
 import { gradientClasses } from "../components/layout/PageBackground.jsx";
 import {descriptions}  from "../pages/AlbumPage/data/descriptionalbum.js"
 import {logosAlbums} from "../assets/images/logos.jsx";
-import ttpdsong from "./Songs/ttpd.json";
-import song from "./Songs/1989.json";
-import debugsong from "./Songs/debug.json";
-import fearlesssong from "./Songs/fearless.json";
-import folkloresong from "./Songs/folklore.json";
-import loversong from "./Songs/lover.json";
-import repsong from "./Songs/reputation.json";
-import speaknow from "./Songs/speakNow.json"
-import midnights from "./Songs/midnights.json"
-import evermore from "./Songs/evermore.json"
-import tloas from "./Songs/tloas.json"
-import redsong from "./Songs/red.json"
+import ttpdsong from "./songs/ttpd.json";
+import song from "./songs/1989.json";
+import debugsong from "./songs/debug.json";
+import fearlesssong from "./songs/fearless.json";
+import folkloresong from "./songs/folklore.json";
+import loversong from "./songs/lover.json";
+import repsong from "./songs/reputation.json";
+import speaknow from "./songs/speakNow.json"
+import midnights from "./songs/midnights.json"
+import evermore from "./songs/evermore.json"
+import tloas from "./songs/tloas.json"
+import redsong from "./songs/red.json"
 
 const albums = [
   {

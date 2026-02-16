@@ -9,7 +9,7 @@ const ContentDivider = ({ texto }) => {
           {texto}
         </p>
       )}
-      <div className="lg:flex-grow h-px bg-black"></div>
+      <div className="lg:grow h-px bg-black"></div>
     </div>
   );
 };

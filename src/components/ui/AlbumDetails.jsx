@@ -1,5 +1,5 @@
 import react from 'react';
-
+import RevealSection from '../layout/RevealSection';
 
 const ContentDivider = ({ texto }) => {
   return (
@@ -16,6 +16,7 @@ const ContentDivider = ({ texto }) => {
 
 function AlbumDetails({ parrafolinea1, parrafolinea2, parrafolinea3, citatextual, parrafofinal, imagen,momentosclave }) {
   return (
+    <RevealSection>
     <div className="max-w-7xl mx-auto mt-10 mb-10 px-6 relative z-10">
       <div className="text-black text-base md:text-base lg:text-lg xl:text-xl leading-relaxed text-left md:text-left poppins-light">
         <img
@@ -45,6 +46,7 @@ function AlbumDetails({ parrafolinea1, parrafolinea2, parrafolinea3, citatextual
         <div className="clear-both"></div>
       </div>
     </div>
+    </RevealSection>
   );
 }
 

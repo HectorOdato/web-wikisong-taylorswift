@@ -8,7 +8,10 @@ import AlbumDetails from "../components/ui/AlbumDetails.jsx";
 import AlbumDetailsContent  from "../data/AlbumDetails.js";
 import {Carousel} from "../components/ui/carousel/Carousel.jsx";
 import imagesCarousel from "../components/ui/carousel/carouselImages.js";
- 
+import RelatedArticles from "../components/ui/ReladtedArticles.jsx";
+import { getRandomItems } from "../components/ui/ReladtedArticles.jsx";
+
+
 function AlbumPage() {
   const { id } = useParams();
   const album = albums.find((album) => album.id === id);
@@ -71,6 +74,24 @@ function AlbumPage() {
         ))}
       </div>
     </section>
+    <article>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+            También te podría interesar
+          </h2>
+          <p className="text-gray-600 text-lg">
+            Descubre más contenido relacionado
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {getRandomItems(albums, 3).map((album) => (
+        <RelatedArticles
+          key={album.id}
+          album={album}
+        />
+  ))}
+</div>
+    </article>
   </main>
   </div>
   );

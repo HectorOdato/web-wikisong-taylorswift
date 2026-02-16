@@ -25,7 +25,7 @@ const SongCard = ({ song, index, isOpen = false, onToggle = () => {} }) => {
       
       {isOpen && (
         <div className="px-5 py-4 bg-gradient-to-b from-gray-50 to-white border-t border-gray-100">
-          <p className="text-gray-600 text-sm leading-relaxed">
+          <p className="text-gray-700 text-sm font-bold leading-relaxed animate-fade-horizontal-left">
             {song.description}
           </p>
         </div>

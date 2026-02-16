@@ -6,14 +6,14 @@ const DescriptionsCard = ({ src,alt, description, title, año }) => {
     {/* Imagen */}
     <div className="w-full md:w-auto">
         <img 
-            className="w-full md:w-64 lg:w-80 xl:w-96 h-auto rounded-lg shadow-lg object-cover" 
+            className="w-full md:w-64 lg:w-80 xl:w-96 h-auto rounded-lg shadow-lg object-cover animate-fade-horizontal-left" 
             src={src} 
             alt={alt}
         />
     </div>
     
     {/* Contenido de texto */}
-    <div className="flex flex-col w-full md:w-2/3 lg:w-auto lg:flex-1 p-4 md:p-5 lg:p-6">
+    <div className="flex flex-col w-full md:w-2/3 lg:w-auto lg:flex-1 p-4 md:p-5 lg:p-6 animate-fade-horizontal-right">
         <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 md:mb-4 text-black text-center md:text-left poppins-medium ">
             {title} ({año})
         </h1>

@@ -14,6 +14,7 @@ import speaknow from "./Songs/speakNow.json"
 import midnights from "./Songs/midnights.json"
 import evermore from "./Songs/evermore.json"
 import tloas from "./Songs/tloas.json"
+import redsong from "./Songs/red.json"
 
 const albums = [
   {
@@ -58,7 +59,7 @@ const albums = [
     banner: taylorBanners.red,
     background: gradientClasses.red,
     descripcion: descriptions.red,
-    songs: ["State of Grace", "Treacherous", "I Knew You Were Trouble", "All Too Well", "22", "I Almost Do", "We Are Never Getting Back Together", "Stay Stay Stay", "The Last Time", "Begin Again"],
+    songs: redsong,
   },
   {
     id: "1989",

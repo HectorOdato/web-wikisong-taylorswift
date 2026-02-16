@@ -6,10 +6,10 @@ const SongCard = ({ song, index, isOpen = false, onToggle = () => {} }) => {
     <div className="mb-3 rounded-xl overflow-hidden bg-white shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-200">
       <button
         onClick={() => onToggle(index)}
-        className="w-full px-5 py-4 hover:bg-gradient-to-r hover:from-gray-50 hover:to-white flex items-center justify-between group transition-all"
+        className="w-full px-5 py-4 hover:bg-linear-to-r hover:from-gray-50 hover:to-white flex items-center justify-between group transition-all"
       >
         <div className="text-left flex items-center gap-4">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+          <div className="w-10 h-10 rounded-full bg-linear-to-br from-purple-500 to-pink-500 flex items-center justify-center">
             <span className="text-white font-bold text-sm">{index + 1}</span>
           </div>
           <div className="flex flex-col">
@@ -24,7 +24,7 @@ const SongCard = ({ song, index, isOpen = false, onToggle = () => {} }) => {
       </button>
       
       {isOpen && (
-        <div className="px-5 py-4 bg-gradient-to-b from-gray-50 to-white border-t border-gray-100">
+        <div className="px-5 py-4 bg-linear-to-b from-gray-50 to-white border-t border-gray-100">
           <p className="text-gray-700 text-sm font-bold leading-relaxed animate-fade-horizontal-left">
             {song.description}
           </p>

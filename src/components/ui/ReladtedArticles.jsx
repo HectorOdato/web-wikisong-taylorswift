@@ -15,12 +15,12 @@ const RelatedArticles = ({album}) => {
           <div className="relative h-48 overflow-hidden">
               <img 
                 src={album.imgcard}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                className="w-full h-full object-cover "
               />
           </div>
         <div className="text-center mt-12">
           <Link to={`/album/${album.id}`}>
-          <button className="bg-gradient-to-br from-purple-500 to-pink-500 text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:scale-110  cursor-pointer">
+          <button className="bg-linear-to-br from-purple-500 to-pink-500 text-white font-semibold px-8 py-3 rounded-lg shadow-md hover:scale-110  cursor-pointer">
             Ver mas
           </button>
           </Link>

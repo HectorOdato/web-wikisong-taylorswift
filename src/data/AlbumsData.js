@@ -1,7 +1,7 @@
 import {taylorImages} from "../assets/images/imgcardsalbum.jsx";
 import { taylorBanners } from "../assets/images/imgbanners.jsx";
 import { gradientClasses } from "../components/layout/PageBackground.jsx";
-import {descriptions}  from "./descriptionalbum.js"
+import {descriptions}  from "../pages/AlbumPage/data/descriptionalbum.js"
 import {logosAlbums} from "../assets/images/logos.jsx";
 import ttpdsong from "./Songs/ttpd.json";
 import song from "./Songs/1989.json";

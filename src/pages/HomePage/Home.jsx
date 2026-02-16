@@ -1,9 +1,9 @@
 import React from 'react';
-import AlbumCard from '../components/ui/AlbumCard.jsx';
-import albums from '../data/AlbumsData.js';
-import { AboutMe } from '../components/ui/AboutMe.jsx';
-import SectionDivider from '../components/ui/SectionDivider.jsx';
-import { PageBackground } from "../components/layout/PageBackground";
+import AlbumCard from '../../components/ui/AlbumCard.jsx';
+import albums from '../../data/AlbumsData.js';
+import { AboutMe } from '../HomePage/components/AboutMe.jsx';
+import SectionDivider from '../../components/ui/SectionDivider.jsx';
+import { PageBackground } from "../../components/layout/PageBackground.jsx";
 
 function Home() {
 return (

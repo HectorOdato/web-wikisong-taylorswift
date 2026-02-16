@@ -1,5 +1,5 @@
 import react from 'react';
-import RevealSection from '../layout/RevealSection';
+import RevealSection from '../../../components/layout/RevealSection';
 
 const ContentDivider = ({ texto }) => {
   return (

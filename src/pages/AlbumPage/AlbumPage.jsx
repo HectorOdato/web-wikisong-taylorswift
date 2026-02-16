@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import SongCard from "../components/ui/SongCard.jsx";
-import albums from "../data/AlbumsData.js";
-import DescriptionsCard from "../components/ui/DescriptionCard.jsx";
-import SectionDivider from "../components/ui/SectionDivider.jsx";
-import AlbumDetails from "../components/ui/AlbumDetails.jsx";
-import AlbumDetailsContent  from "../data/AlbumDetails.js";
-import {Carousel} from "../components/ui/carousel/Carousel.jsx";
-import imagesCarousel from "../components/ui/carousel/carouselImages.js";
-import RelatedArticles from "../components/ui/ReladtedArticles.jsx";
-import { getRandomItems } from "../components/ui/ReladtedArticles.jsx";
+import SongCard from "../AlbumPage/components/SongCard.jsx";
+import albums from "../../data/AlbumsData.js";
+import DescriptionsCard from "../AlbumPage/components/DescriptionCard.jsx";
+import SectionDivider from "../../components/ui/SectionDivider.jsx";
+import AlbumDetails from "./components/AlbumDetails.jsx";
+import AlbumDetailsContent  from "./data/AlbumDetails.js";
+import {Carousel} from "../../components/ui/carousel/Carousel.jsx";
+import imagesCarousel from "../../components/ui/carousel/carouselImages.js";
+import RelatedArticles from "../../components/ui/ReladtedArticles.jsx";
+import { getRandomItems } from "../../components/ui/ReladtedArticles.jsx";
 
 
 function AlbumPage() {

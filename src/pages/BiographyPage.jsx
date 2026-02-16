@@ -1,5 +1,4 @@
 import React from "react";
-import Details from "../components/ui/AlbumDetails";
 import { PageBackground } from "../components/layout/PageBackground";
 import { ContentSection } from "../components/ui/ContentSection";
 import { Carousel } from "../components/ui/carousel/Carousel";

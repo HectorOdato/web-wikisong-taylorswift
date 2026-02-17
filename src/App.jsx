@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {Routes, Route} from "react-router-dom";
 import Home from './pages/HomePage/Home.jsx'
 import AlbumPage from './pages/AlbumPage/AlbumPage.jsx'
 import {Footer} from './components/layout/Footer.jsx'
@@ -11,7 +10,7 @@ import ScrollToTop from './components/layout/ScrollToTop.jsx'
 function App() {
 
   return (
-      <Router>
+      <>
       <ScrollToTop/>
       <Header/>
         <Routes>
@@ -20,7 +19,7 @@ function App() {
           <Route path="/biography" element={<BiographyPage/>} />
         </Routes>
         <Footer/>
-      </Router>
+      </>
   )
 }
 

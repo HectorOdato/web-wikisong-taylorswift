@@ -46,7 +46,9 @@ const Header = () => {
     const [showAlbums, setShowAlbums] = useState(false);
 
     return (
+        <>
         <header className="sticky top-0 w-full h-auto lg:h-60 z-20 shadow-2xl p-3 sm:p-5 oswald-font">
+            
             <img 
                 src="https://res.cloudinary.com/deijzj2mb/image/upload/v1768883427/imagen_2026-01-20_013024052_flzobt.png" 
                 alt="" 
@@ -85,8 +87,8 @@ const Header = () => {
                                     {albums.map((album) => (
                                         <Link
                                             key={album.id}
+                                            onClick={() => setIsOpenMenu(false)}
                                             to={`/album/${album.id}`}
-                                            onClick={() => setIsOpenMenu=false}
                                             className="block px-4 py-2 text-orange-400 hover:bg-orange-100 hover:text-orange-600 rounded-xl transition-all duration-200 transform hover:translate-x-1">
                                             {album.title}
                                         </Link>
@@ -169,7 +171,8 @@ const Header = () => {
                 </div>
             </div>
         </header>
+        </>
     );
 }
-
+console.log("Ruta actual:", location.pathname)
 export default Header;

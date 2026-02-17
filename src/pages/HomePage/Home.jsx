@@ -4,9 +4,19 @@ import albums from '../../data/AlbumsData.js';
 import { AboutMe } from '../HomePage/components/AboutMe.jsx';
 import SectionDivider from '../../components/ui/SectionDivider.jsx';
 import { PageBackground } from "../../components/layout/PageBackground.jsx";
+import { Helmet } from "react-helmet-async";
+
 
 function Home() {
 return (
+    <>
+        <Helmet>
+            <title >Inicio | Taylor Swift Wiki</title>
+            <meta
+                name="description"
+                content="Bienvenido a la wiki de Taylor Swift."
+            />
+        </Helmet>
     <main className={`min-h-screen flex flex-col relative ${PageBackground.font_white}`}>
         <section className="relative mx-auto h-full overflow-hidden">
             <img 
@@ -43,6 +53,7 @@ return (
             </div>
         </section>
     </main>
+    </>
 );
 }
 

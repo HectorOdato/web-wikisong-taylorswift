@@ -10,6 +10,7 @@ import {Carousel} from "../../components/ui/carousel/Carousel.jsx";
 import imagesCarousel from "../../components/ui/carousel/carouselImages.js";
 import RelatedArticles from "../../components/ui/ReladtedArticles.jsx";
 import { getRandomItems } from "../../components/ui/ReladtedArticles.jsx";
+import { Helmet } from "react-helmet-async";
 
 
 function AlbumPage() {
@@ -31,6 +32,14 @@ function AlbumPage() {
   };
 
   return (
+    <>
+        <Helmet>
+                <title> {album.id} | Taylor Swift Wiki</title>
+                <meta
+                    name="description"
+                    content={`Información del álbum ${id} de Taylor Swift.`}
+                />
+      </Helmet>
   <div className="min-h-screen relative ">
     <div className={`absolute inset-0 bg-white bg-cover bg-center `} />
     <main className={`relative  z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12 space-y-8 sm:space-y-10 lg:space-y-16 `}>
@@ -94,6 +103,7 @@ function AlbumPage() {
     </article>
   </main>
   </div>
+  </>
   );
 }
 

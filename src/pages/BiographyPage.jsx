@@ -2,6 +2,7 @@ import React from "react";
 import { PageBackground } from "../components/layout/PageBackground";
 import { ContentSection } from "../components/ui/ContentSection";
 import { Carousel } from "../components/ui/carousel/Carousel";
+import { Helmet } from "react-helmet-async";
 
 const images = [
     "https://res.cloudinary.com/deijzj2mb/image/upload/v1770177178/taylor-swift-the-eras-tour-hamburg-n1-tas-rights-management-13116.jpg_eufeep.webp",
@@ -17,6 +18,14 @@ const floatimage = {
 
 export const BiographyPage = () => {
     return (
+        <>
+        <Helmet>
+            <title>Biografia | Taylor Swift Wiki</title>
+            <meta
+                name="description"
+                content="Biografía completa de Taylor Swift, su trayectoria musical, premios y evolución artística."
+            />
+        </Helmet>
     <main className={`min-h-screen ${PageBackground.font_white} text-black p-8`}>
         <section className="flex flex-col lg:flex-row items-center justify-center mx-auto lg:mt-10 lg:mb-10 px-4 lg:px-0 lg:pb-20">
         <div className="w-full lg:w-auto mb-6 lg:mb-0">
@@ -124,5 +133,6 @@ export const BiographyPage = () => {
             </div>
             </section>
         </main>
+        </>
     );
 }
